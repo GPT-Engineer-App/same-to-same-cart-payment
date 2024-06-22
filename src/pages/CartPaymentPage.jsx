@@ -1,4 +1,4 @@
-import { Box, Button, Container, Flex, Heading, HStack, Image, Select, Stack, Text, VStack } from "@chakra-ui/react";
+import { Box, Button, Container, Flex, Heading, HStack, Image, Text, VStack, Link } from "@chakra-ui/react";
 import { FaFacebook, FaTwitter, FaPinterest } from "react-icons/fa";
 
 const CartPaymentPage = () => {
@@ -19,10 +19,10 @@ const CartPaymentPage = () => {
         {/* Product Details */}
         <VStack align="start" spacing={4} flex="1">
           <Heading as="h1" size="lg">Men's Real Shearling Sheepskin Leather Warm Duffle Trench Coat</Heading>
-          <Text fontSize="2xl" fontWeight="bold">$144.99</Text>
+          <Text fontSize="2xl" fontWeight="bold">144.99$</Text>
           <Text>Size</Text>
           <HStack spacing={2}>
-            <Button variant="outline">32</Button>
+            <Button variant="outline" colorScheme="blue">32</Button>
             <Button variant="outline">33</Button>
             <Button variant="outline">34</Button>
             <Button variant="outline">36</Button>
@@ -42,7 +42,7 @@ const CartPaymentPage = () => {
             </ul>
             <Text mt={4}><strong>Product Description:</strong></Text>
             <Text>WHAT WE ARE UP TO AT BRANDS LOCK: Our philosophy is to provide...</Text>
-            <Button variant="link" colorScheme="blue" mt={2}>Show More</Button>
+            <Link color="blue.500" mt={2}>Show More</Link>
           </Box>
 
           {/* Social Media Sharing Options */}
